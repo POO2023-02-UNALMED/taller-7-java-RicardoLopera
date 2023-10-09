@@ -12,9 +12,11 @@ public class Alfabeto extends Pictograma {
 	}
 	
 	public String interpretacion() {
-		return interpretacion;
+		return getInterpretacion();
 	}
-	
+	public int cantidadLetras() {
+		return letras.length;
+	}
 	public String toString() {
 		String alfabeto = "";
 		int e = 0;
