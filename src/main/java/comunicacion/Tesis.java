@@ -29,6 +29,9 @@ public class Tesis extends Escrito {
 	public void setArgumentos(String[] argumentos) {
 		this.argumentos = argumentos;
 	}
+	public int getNumeroArgumentos() {
+		return argumentos.length;
+	}
 	public String getConclusion() {
 		return conclusion;
 	}
@@ -55,8 +58,7 @@ public class Tesis extends Escrito {
 		return numeroPalabras;
 	}
 	public String toString() {
-		String informacion = getOrigen()+ "\n"+getTitulo()+"\n"+ getAutor()+ "\n"+getPaginas()+"\n"+ getIdea()
-		+"\n"+getArgumentos()+"\n"+getConclusion()+"\n"+getReferencias();
+		String informacion = getOrigen()+ "\n"+getTitulo()+"\n"+ getAutor()+ "\n"+getPaginas()+"\n"+ getIdea()+"\n"+getNumeroArgumentos()+"\n"+getConclusion()+"\n"+getReferencias();
 		return informacion;
 		}
 }
